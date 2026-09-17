@@ -1,27 +1,17 @@
 #include<iostream>
 using namespace std;
-
 int main()
 {
-    //1234
-    //1234 till n
-    
-    int n=3;
-    int i;
-    int j;
+    int n=4;
 
-    
-
-    for(i=1;i<=n;i++)
+    for(int i=0;i<n;i++)
     {
-        for(j=1;j<=4;j++)
+        for(int j=0;j<n-i;j++)
         {
             cout<<"*";
-           
+
         }
         cout<<"\n";
     }
-
     return 0;
 }
-
