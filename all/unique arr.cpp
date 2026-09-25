@@ -1,25 +1,24 @@
 #include<iostream>
 using namespace std;
-int uniques(int arr[],int size)
+void unarr(int arr[],int size)
 {
     int i;
     int j;
     for(i=0;i<size;i++)
     {
-        for(j=1;j<=size;j++)
+        for(j=1;j<size;j++)
         {
             if(arr[i]!=arr[j])
             {
-                return arr[i];
+                cout<<arr[i];
             }
         }
     }
 }
 int main()
 {
-    int arr[]={55,22,33,11};
     int size=4;
-    cout<<uniques(arr,size);
+    int arr[]={11,22,11,33};
+    unarr(arr,size);
     return 0;
-    
 }
